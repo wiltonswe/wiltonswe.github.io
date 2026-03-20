@@ -1,0 +1,102 @@
+[
+  {
+    "gp": "Japan GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-03-27T03:30:00" },
+      { "name": "FP2", "date": "2026-03-27T07:00:00" },
+      { "name": "FP3", "date": "2026-03-28T03:30:00" },
+      { "name": "Qualifying", "date": "2026-03-28T07:00:00" },
+      { "name": "Race", "date": "2026-03-29T07:00:00" }
+    ]
+  },
+  {
+    "gp": "Miami GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-05-01T18:30:00" },
+      { "name": "FP2", "date": "2026-05-01T22:00:00" },
+      { "name": "FP3", "date": "2026-05-02T18:30:00" },
+      { "name": "Qualifying", "date": "2026-05-02T22:00:00" },
+      { "name": "Race", "date": "2026-05-03T22:00:00" }
+    ]
+  },
+  {
+    "gp": "Imola GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-05-15T13:30:00" },
+      { "name": "FP2", "date": "2026-05-15T17:00:00" },
+      { "name": "FP3", "date": "2026-05-16T12:30:00" },
+      { "name": "Qualifying", "date": "2026-05-16T16:00:00" },
+      { "name": "Race", "date": "2026-05-17T15:00:00" }
+    ]
+  },
+  {
+    "gp": "Monaco GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-05-22T13:30:00" },
+      { "name": "FP2", "date": "2026-05-22T17:00:00" },
+      { "name": "FP3", "date": "2026-05-23T12:30:00" },
+      { "name": "Qualifying", "date": "2026-05-23T16:00:00" },
+      { "name": "Race", "date": "2026-05-24T15:00:00" }
+    ]
+  },
+  {
+    "gp": "Spain GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-05-29T13:30:00" },
+      { "name": "FP2", "date": "2026-05-29T17:00:00" },
+      { "name": "FP3", "date": "2026-05-30T12:30:00" },
+      { "name": "Qualifying", "date": "2026-05-30T16:00:00" },
+      { "name": "Race", "date": "2026-05-31T15:00:00" }
+    ]
+  },
+  {
+    "gp": "Canada GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-06-12T19:30:00" },
+      { "name": "FP2", "date": "2026-06-12T23:00:00" },
+      { "name": "FP3", "date": "2026-06-13T18:30:00" },
+      { "name": "Qualifying", "date": "2026-06-13T22:00:00" },
+      { "name": "Race", "date": "2026-06-14T20:00:00" }
+    ]
+  },
+  {
+    "gp": "Austria GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-06-26T13:30:00" },
+      { "name": "Sprint Qualifying", "date": "2026-06-26T17:00:00" },
+      { "name": "Sprint", "date": "2026-06-27T13:00:00" },
+      { "name": "Qualifying", "date": "2026-06-27T17:00:00" },
+      { "name": "Race", "date": "2026-06-28T15:00:00" }
+    ]
+  },
+  {
+    "gp": "United Kingdom GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-07-03T14:30:00" },
+      { "name": "FP2", "date": "2026-07-03T18:00:00" },
+      { "name": "FP3", "date": "2026-07-04T13:30:00" },
+      { "name": "Qualifying", "date": "2026-07-04T17:00:00" },
+      { "name": "Race", "date": "2026-07-05T16:00:00" }
+    ]
+  },
+  {
+    "gp": "Belgium GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-07-17T13:30:00" },
+      { "name": "Sprint Qualifying", "date": "2026-07-17T17:00:00" },
+      { "name": "Sprint", "date": "2026-07-18T13:00:00" },
+      { "name": "Qualifying", "date": "2026-07-18T17:00:00" },
+      { "name": "Race", "date": "2026-07-19T15:00:00" }
+    ]
+  },
+  {
+    "gp": "Hungary GP",
+    "sessions": [
+      { "name": "FP1", "date": "2026-07-24T13:30:00" },
+      { "name": "FP2", "date": "2026-07-24T17:00:00" },
+      { "name": "FP3", "date": "2026-07-25T12:30:00" },
+      { "name": "Qualifying", "date": "2026-07-25T16:00:00" },
+      { "name": "Race", "date": "2026-07-26T15:00:00" }
+    ]
+  }
+]

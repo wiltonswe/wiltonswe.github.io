@@ -1,0 +1,35 @@
+.nav-logo {
+    height: 80px;
+    width: auto;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* Navbar logga */
+.nav-logo {
+    height: 40px;
+    width: auto;
+}
+
+
+.hero {
+    background-image: url('../Bilder/winner.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 12px;
+}
+
+#countdown {
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+}

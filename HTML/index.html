@@ -1,47 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <link rel="stylesheet" href="style.css">
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Analytics</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
+<header>
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="../Bilder/f1logga.png" alt="f1logga" class="nav-logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="index.html">Home</a>
           <a class="nav-link" href="highlights.html">Highlights</a>
-        </li>
-        <li class="nav-item">
+          <a class="nav-link" href="comp.html">Competition</a>
           <a class="nav-link" href="nyheter.html">Nyheter</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="statistik.html">Statistik</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gs.html">GS</a>
-        </li>
-         <li class="nav-item">
+          <a class="nav-link" href="gs.html">Ghost car</a>
           <a class="nav-link" href="bana.html">Bana</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comp.html">Comp</a>
-        </li>
-      </ul>
+          <a class="nav-link" href="result.html">Resultat</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero text-white d-flex align-items-center justify-content-center">
+    <div class="text-center">
+      <h1 class="display-3">Apex Analytics</h1>
+      <p class="lead">Senaste racet – vinnaren tar allt</p>
+    </div>
+  </section>
+
+  <div class="container mt-5">
+    <div class="row g-4">
+
+
+      <div class="col-md-6">
+        <div class="card text-center p-4 shadow">
+          <h2 id="session-name">Nästa session:</h2>
+          <h1 id="countdown">00:00:00:00</h1>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card p-4 shadow">
+          <h2>Top 3 - VM</h2>
+          <ol>
+            <li>Max Verstappen</li>
+            <li>Lewis Hamilton</li>
+            <li>Charles Leclerc</li>
+          </ol>
+        </div>
+      </div>
+
     </div>
   </div>
-</nav>
 
+</main>
+
+<footer class="text-center mt-5 mb-3">
+  <p>© 2026 Apex Analytics</p>
+</footer>
+
+<script src="../JS/init.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
