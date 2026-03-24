@@ -33,3 +33,46 @@ body {
     font-weight: bold;
     color: red;
 }
+
+.track-card {
+    text-decoration: none;
+    color: white;
+}
+
+fieldset {
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 10px;
+    transition: 0.3s;
+    background-color: #1c1c1c;
+}
+
+fieldset:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: red;
+}
+
+fieldset img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+fieldset {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: red;
+}
