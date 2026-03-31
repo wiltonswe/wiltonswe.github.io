@@ -125,3 +125,46 @@ legend {
 .stat-card p {
     color: #ccc;
 }
+
+
+.driver-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+.driver-link fieldset {
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 0; 
+    background-color: #1c1c1c;
+    overflow: hidden; 
+    transition: 0.3s;
+}
+
+
+.driver-link fieldset:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+
+.driver-link img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; 
+    object-position: top; 
+}
+
+
+.driver-link h5 {
+    padding: 10px;
+    margin: 0;
+}
+
+
+.driver-link legend {
+    padding: 5px 10px;
+    color: red;
+    font-weight: bold;
+}
