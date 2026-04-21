@@ -1,4 +1,4 @@
-fetch("https://api.openf1.org/v1/drivers?driver_number=6&session_key=latest")
+fetch("https://api.openf1.org/v1/drivers?driver_number=30&session_key=latest")
   .then(res => res.json())
   .then(data => {
 

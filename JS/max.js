@@ -1,4 +1,4 @@
-fetch("https://api.openf1.org/v1/drivers?driver_number=1&session_key=9158")
+fetch("https://api.openf1.org/v1/drivers?driver_number=3&session_key=latest")
   .then(res => res.json())
   .then(data => {
 
@@ -8,6 +8,7 @@ fetch("https://api.openf1.org/v1/drivers?driver_number=1&session_key=9158")
     document.getElementById("driver-number").textContent = driver.driver_number;
     document.getElementById("team-name").textContent = driver.team_name;
     document.getElementById("country").textContent = driver.country_code;
+    document.getElementById("headshot-url").src = driver.headshot_url;
 
   })
   .catch(err => {
