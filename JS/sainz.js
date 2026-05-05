@@ -9,6 +9,7 @@ fetch("https://api.openf1.org/v1/drivers?driver_number=2&session_key=latest")
     document.getElementById("team-name").textContent = driver.team_name;
     document.getElementById("country").textContent = driver.country_code;
     document.getElementById("headshot-url").src = driver.headshot_url;
+    
   })
   .catch(err => {
     console.error("Fel:", err);
