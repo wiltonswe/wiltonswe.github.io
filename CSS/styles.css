@@ -219,3 +219,14 @@ legend {
     transform: scale(1.05);
     transition: 0.3s;
 }
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+}
