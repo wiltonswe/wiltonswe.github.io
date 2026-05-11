@@ -69,3 +69,28 @@ function start() {
 
   }, 1000);
 }
+
+let header = document.querySelector("header");
+header.innerHTML = `
+ <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+  <img src="/Bilder/f1logga.png" alt="f1logga" class="nav-logo">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Meny">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/Html/index.html">Home</a>
+        <a class="nav-link" href="/Html/highlights.html">Highlights</a>
+        <a class="nav-link" href="/Html/comp.html">Competition</a>
+        <a class="nav-link" href="/Html/nyheter.html">Nyheter</a>
+        <a class="nav-link" href="/Html/statistik.html">Statistik</a>
+        <a class="nav-link" href="/Html/gs.html">Ghost car</a>
+        <a class="nav-link" href="/Html/bana.html">Banor</a>
+        <a class="nav-link" href="/Html/result.html">Resultat</a>
+      </div>
+    </div>
+  </div>
+</nav>`
