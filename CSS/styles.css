@@ -27,7 +27,7 @@
 
 body {
     background-color: #2c2a2a;
-    color: rgb(61, 58, 58);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -91,6 +91,19 @@ fieldset {
   padding: 20px;
   background-color: #1c1c1c;
   color: white;
+}
+
+.news-article {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.news-article h2,
+.news-article h3 {
+  color: red;
 }
 
 legend {
