@@ -243,3 +243,116 @@ legend {
         padding: 15px;
     }
 }
+
+/* RESULT CARD */
+
+.result-card {
+    border: 3px solid red;
+    border-radius: 14px;
+
+    background-color: #1c1c1c;
+
+    margin-bottom: 30px;
+    padding: 20px;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.result-card:hover {
+    transform: scale(1.01);
+}
+
+/* TOP 3 */
+
+.gold {
+    background: linear-gradient(135deg, #3a2d00, #1c1c1c);
+}
+
+.silver {
+    background: linear-gradient(135deg, #444, #1c1c1c);
+}
+
+.bronze {
+    background: linear-gradient(135deg, #5a3314, #1c1c1c);
+}
+
+/* DNF */
+
+.dnf-card {
+    border-color: red !important;
+    opacity: 0.8;
+}
+
+/* POSITION */
+
+.result-card legend {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* LAYOUT */
+
+.result-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* DRIVER IMAGE */
+
+.result-img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+    object-position: top;
+
+    border-radius: 12px;
+}
+
+/* INFO */
+
+.result-info {
+    flex: 1;
+}
+
+/* FASTEST LAP */
+
+.fastest-lap {
+    background-color: purple;
+
+    color: white;
+
+    padding: 5px 10px;
+
+    border-radius: 8px;
+
+    font-size: 0.8rem;
+
+    margin-left: 10px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .result-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .result-img {
+        width: 160px;
+        height: 160px;
+    }
+
+}
+
+#results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
