@@ -1,6 +1,6 @@
 const container = document.getElementById("results-container");
 
-// TEAM COLORS
+
 const teamColors = {
   "Red Bull Racing": "#0600EF",
   "Ferrari": "#DC0000",
@@ -10,13 +10,13 @@ const teamColors = {
   "Alpine": "#0090FF",
   "Haas F1 Team": "#FFFFFF",
   "Williams": "#005AFF",
-  "Audi": "#4142418c",
+  "Audi": "#525252a4",
   "Racing Bulls": "#2B4562",
-  "Cadillac": "#B9B9B9",
+  "Cadillac": "#dddddd",
 };
 
 
-// FORMAT RACE TIME
+
 function formatRaceTime(seconds) {
 
   if (!seconds) return "N/A";
@@ -27,41 +27,41 @@ function formatRaceTime(seconds) {
 
   const secs = (seconds % 60).toFixed(3);
 
-  // under 1 timme
+
   if (hrs <= 0) {
     return `${mins}m ${secs}s`;
   }
 
-  // normalt race
+
   return `${hrs}h ${mins}m ${secs}s`;
 }
 
 
-// FORMAT GAP TO LEADER
+
 function formatGap(gap, position) {
 
-  // vinnaren
+
   if (position === 1) {
     return "N/A";
   }
 
-  // inget värde
+  
   if (!gap) {
     return "N/A";
   }
 
-  // om API redan skickar +1 LAP osv
+
   if (typeof gap === "string" && gap.includes("LAP")) {
     return gap;
   }
 
-  // annars sekunder
+
   return `+${parseFloat(gap).toFixed(3)}s`;
 }
 
 
 
-// HÄMTA RESULTAT + DRIVERS
+
 Promise.all([
 
   fetch("https://api.openf1.org/v1/session_result?session_key=latest")
@@ -74,7 +74,7 @@ Promise.all([
 
 .then(([results, drivers]) => {
 
-  // SORTERA EFTER POSITION
+
   results.sort((a, b) => {
 
     if (!a.position) return 1;
@@ -84,28 +84,28 @@ Promise.all([
 
   });
 
-  // LOOPA FÖRARE
+
   results.forEach((result) => {
 
-    // HITTA DRIVER
+
     const driver = drivers.find(
       d => d.driver_number == result.driver_number
     );
 
-    // om ingen driver hittas
+
     if (!driver) return;
 
-    // SKAPA FIELDSET
+
     const card = document.createElement("fieldset");
 
     card.classList.add("result-card");
 
-    // TEAM COLOR
+
     const color = teamColors[driver.team_name] || "red";
 
     card.style.borderColor = color;
 
-    // PODIUM
+
     if (result.position === 1) {
       card.classList.add("gold");
     }
@@ -118,7 +118,7 @@ Promise.all([
       card.classList.add("bronze");
     }
 
-    // STATUS
+
     let status = "Finished";
 
     if (result.dnf) {
@@ -136,7 +136,7 @@ Promise.all([
       card.classList.add("dnf-card");
     }
 
-    // WINNER BADGE
+
     let badge = "";
 
     if (result.position === 1) {
@@ -147,12 +147,12 @@ Promise.all([
       `;
     }
 
-    // BILD
+
     const image = driver.headshot_url
       ? driver.headshot_url
       : "../Bilder/defaultdriver.png";
 
-    // HTML
+
     card.innerHTML = `
 
       <legend>
@@ -161,7 +161,12 @@ Promise.all([
 
       <div class="result-content">
 
-        <img src="${image}" class="result-img">
+        <img 
+          src="${image}" 
+          class="result-img"
+          alt="${driver.full_name} Formula 1 driver portrait"
+          loading="lazy"
+        >
 
         <div class="result-info">
 
@@ -190,7 +195,7 @@ Promise.all([
 
     `;
 
-    // LÄGG TILL
+
     container.appendChild(card);
 
   });
